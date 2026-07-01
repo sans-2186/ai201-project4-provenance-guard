@@ -128,7 +128,7 @@ Result: first 10 requests return `200`, then `429` once the minute quota is hit.
 ```bash
 curl -s -X POST http://localhost:5000/submit \
   -H "Content-Type: application/json" \
-  -d '{"text": "Artificial intelligence represents a transformative paradigm shift...", "creator_id": "demo-ai"}' | python -m json.tool
+  -d '{"text": "It is important to note that artificial intelligence represents a transformative paradigm shift. Furthermore, it is equally essential to consider the ethical implications. Moreover, stakeholders must collaborate across various sectors. Additionally, it is worth noting that responsible deployment requires careful consideration. In today'\''s rapidly evolving landscape, organizations must navigate complex challenges. It is crucial to understand that AI offers numerous benefits while also presenting significant risks. In conclusion, a balanced approach is necessary.", "creator_id": "demo-ai"}' | python3 -m json.tool
 ```
 
 ```json
@@ -147,7 +147,7 @@ curl -s -X POST http://localhost:5000/submit \
 ```bash
 curl -s -X POST http://localhost:5000/submit \
   -H "Content-Type: application/json" \
-  -d '{"text": "The sun dipped below the horizon, painting the sky in hues of amber and rose...", "creator_id": "demo-human"}' | python -m json.tool
+  -d '{"text": "ok so i finally tried that new ramen place downtown and honestly? underwhelming. the broth was fine but they put WAY too much sodium in it and i was thirsty for like three hours after.", "creator_id": "demo-human"}' | python3 -m json.tool
 ```
 
 ```json
